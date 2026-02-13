@@ -1,4 +1,4 @@
-# VAUTECH IT SOLUTIONS – TASK 2
+# VAUTECH IT SOLUTIONS – TASK 3
 
 **Intern:** Abhishek Parihar  
 **Intern ID:** VT26DS005  
@@ -12,7 +12,7 @@
 
 ## Objective
 
-The objective of this task is to load tha suicide dataset into python and perform initial exploration to understand the structure, size, data types, missing values, and basic statistical properties of the data before performing further analysis.
+The objective of this task is to clean and preprocess the dataset to make it suitable for analysis. This includes handling missing values, removing duplicate records, correcting data inconsistencies, converting categorical data into numerical format, and preparing a structured, reliable dataset for further data analysis, visualization, and machine learning applications.
 
 ---
 
@@ -60,4 +60,4 @@ df.head()
 
 ## Conclusion
 
-In this task, the dataset was successfully loaded and explored. The structure, size, data types, missing values, and basic statistics of the dataset were analyzed. This step ensures a proper understanding of the data before moving to data cleaning, visualization, or advanced analysis.
+In this task, the dataset was successfully cleaned and preprocessed to ensure accuracy and consistency. Missing values were handled, duplicate records were removed, inconsistencies were corrected, and categorical variables were converted into numerical format. These steps prepared a clean and structured dataset that is now ready for further data analysis, visualization, and machine learning applications.
