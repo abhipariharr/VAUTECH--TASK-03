@@ -33,39 +33,28 @@ The objective of this task is to load tha suicide dataset into python and perfor
 import pandas as pd
 df = pd.read_csv('suicide_data.csv')
 
-![Screenshot](Images/load_data.png)
+![Screenshot](Images/import.png)
 
 ## Step 2: Preview Data
 df.head()
 
-![Screenshot](Images/preview.png)
+![Screenshot](Images/head.png)
 
-## Step 3: Checking Dataset size
-df.shape
+## Step 3: Handling Missing values
 
-![Screenshot](Images/dataset.png)
+![Screenshot](Images/missing.png)
 
-## Step 4: Checking Datatype and Structure
-df.info()
+## Step 4: Removing Duplicate values
 
-![Screenshot](Images/datatype.png)
+![Screenshot](Images/drop.png)
 
-## Step 5: Checking missing Values
-df.isnull().sum()
+## Step 5: Creating seperate columns for each category
 
-![Screenshot](Images/missing_value.png)
+![Screenshot](Images/dummy.png)
 
-## Step 6: Checking Inconsistency 
-for col in df.select_dtypes('object'):
-    print(f"\nColumn: {col}")
-    print(df[col].value_counts().head(10))
+## Step 6:  Saving clean data set 
 
-![Screenshot](Images/inconsistency.png)
-
-## Step 7: Summary Statistics
-df.describe()
-
-![Screenshot](Images/summary.png)
+![Screenshot](Images/clean.png)
 
 ---
 
