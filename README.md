@@ -30,6 +30,7 @@ The objective of this task is to clean and preprocess the dataset to make it sui
 
 ## Step 1: Loading the Dataset
 
+code:
 import pandas as pd
 df = pd.read_csv('suicide_data.csv')
 
@@ -40,19 +41,23 @@ df.head()
 
 ![Screenshot](images/head.png)
 
-## Step 3: Handling Missing values
+## Step 3: Checking Duplicate values
+df[df.duplicated()]
 
-![Screenshot](images/missing.png)
+![Screenshot](images/duplicates.png)
 
 ## Step 4: Removing Duplicate values
+df = df.drop_duplicates()
 
 ![Screenshot](images/drop.png)
 
 ## Step 5: Creating seperate columns for each category
+df = pd.get_dummies(df, columns=['sex', 'age', 'generation'])
 
 ![Screenshot](images/dummy.png)
 
 ## Step 6:  Saving clean data set 
+df.to_csv('clean_suicide_data.csv', index=False)
 
 ![Screenshot](images/clean.png)
 
